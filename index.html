@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome  -->
+    <script
+      src="https://kit.fontawesome.com/68c8c047e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- stylesheet  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container-fluid">
+    <main>
+      <!-- header -->
+      <header class="container">
+        <nav
+          class="navbar navbar-expand-lg navbar-light justify-content-between"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a
+              class="navbar-brand navbar-nav mr-auto mt-2 mt-lg-0 logo"
+              href="#"
+            >
+              <h5 class="beauty">BEAUTY</h5>
+              <h4 class="logo logo-vitae">VITAE</h4>
+            </a>
+
+            <div class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Log in</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Sign up</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Set Up My Business</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >Location <i class="fas fa-caret-down"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="serach-box">
+          <div class="row justify-content-end">
+            <div class="col-md-5 mb-3 p-0">
+              <div class="input-group md-form form-sm form-1 rounded-circle">
+                <div class="input-group-prepend">
+                  <span class="input-group-text purple" id="basic-text1"
+                    ><i class="fas fa-search" aria-hidden="true"></i
+                  ></span>
+                </div>
+                <input
+                  class="form-control border-left-0 my-0 py-1 rounded-0 p-1"
+                  type="text"
+                  placeholder="What are you looking for?"
+                  aria-label="Search"
+                />
+              </div>
+            </div>
+            <div class="col-md-5 mb-3 p-0">
+              <div class="input-group md-form form-sm form-2">
+                <div class="input-group-prepend rounded-0 locationbar">
+                  <span class="input-group-text rounded-0" id="basic-text2"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                </div>
+                <input
+                  class="form-control my-0 py-1 rounded-0 p-1"
+                  type="text"
+                  placeholder="Where?"
+                  aria-label="Search"
+                />
+                <div class="input-group-append">
+                  <button type="button" class="btn btn-dark">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- section -->
+      <section class="section row mb-4">
+        <div class="col text-center">
+          <div class="col">
+            <i class="fas fa-chevron-up fa-3x"></i>
+          </div>
+          <div class="col text-center">
+            <img
+              class="rounded-circle p-2 z-depth-2"
+              alt="100x100"
+              width="75px"
+              src="img/hair-wash.png"
+              data-holder-rendered="true"
+            />
+            <p class="desc pt-3">Detox</p>
+          </div>
+          <div class="col">
+            <img
+              class="rounded-circle p-2 z-depth-2 circle-border"
+              alt="100x100"
+              width="75px"
+              src="img/hair-cut.jpg"
+              data-holder-rendered="true"
+            />
+            <p class="desc pt-3">Hair Cutting</p>
+          </div>
+          <div class="col">
+            <img
+              class="rounded-circle p-1 z-depth-2"
+              alt="100x100"
+              width="75px"
+              src="img/hair-colour.jpg"
+              data-holder-rendered="true"
+            />
+            <p class="desc pt-3">Hair Color</p>
+          </div>
+          <div class="col">
+            <img
+              class="rounded-circle p-1 z-depth-2"
+              alt="100x100"
+              width="75px"
+              src="img/hair-colour.jpg"
+              data-holder-rendered="true"
+            />
+            <p class="desc pt-3">Hair Color</p>
+          </div>
+          <div class="col">
+            <img
+              class="rounded-circle p-2 z-depth-2"
+              alt="100x100"
+              width="75px"
+              src="img/hair-highlight.png"
+              data-holder-rendered="true"
+            />
+            <p class="desc pt-3">Hair Highlighting</p>
+          </div>
+          <div class="col"><i class="fas fa-chevron-down fa-3x"></i></div>
+        </div>
+        <!-- side-section -->
+
+        <!-- right section -->
+        <div class="col-md-10 p-3">
+          <!-- // slider -->
+
+          <!-- slider end -->
+          <!-- <div class="row right-top d-flex flex-wrap">
+            <div class="col-1 right-side">
+              <i class="fas fa-chevron-left fa-3x"></i>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2"
+                alt="100x100"
+                width="70px"
+                src="img/location.png"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Near By</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2"
+                alt="100x100"
+                width="70px"
+                src="img/weght-loos.png"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Weight Loss</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2 circle-border"
+                alt="100x100"
+                width="70px"
+                src="img/haircutBarber.png"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Hair and Barbers</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2 makeup"
+                alt="100x100"
+                width="70px"
+                src="img/beauty-icon-png-5-Transparent-Images.png"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Makeup</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2"
+                alt="100x100"
+                width="70px"
+                src="img/botox.jpg"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Botox</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2"
+                alt="100x100"
+                width="70px"
+                src="img/percing.png"
+                data-holder-rendered="true"
+              />
+              <p class="desc pt-2">Piercings</p>
+            </div>
+            <div class="col-1 right-side">
+              <img
+                class="rounded-circle bg-white p-2 z-depth-2 text-center"
+                alt="100x100"
+                width="70px"
+                src="img/fitnes.png"
+                i
+                data-holder-rendered="true"
+              />
+
+              <p class="desc pt-2 text-center">Fitness</p>
+            </div>
+            <div class="col-1 right-side">
+              <i class="fas fa-chevron-right fa-3x"></i>
+            </div>
+          </div> -->
+          <!-- userscards -->
+          <div class="d-flex flex-wrap justify-content-around">
+            <div class="col-md-6 pl-0 users">
+              <div class="box">
+                <span class="btn btn-dark mr-2"></span>
+                <h5>HAIR AND BARBARS</h5>
+              </div>
+              <div class="col bg-white m-2 rounded-lg text-center mb-4 p-2">
+                <div class="row">
+                  <div class="col-sm-3 pr-0 user-image">
+                    <img
+                      src="img/user.jpg"
+                      width="100px"
+                      class="rounded-circle img-responsive text-center"
+                      alt="Circular Image"
+                    />
+                  </div>
+                  <div class="col-sm-9 p-0 info-box">
+                    <h6>
+                      <span class="badge badge-secondary"
+                        >4.2 <br />labales</span
+                      >
+                    </h6>
+                    <div class="user-info">
+                      <h4>Marry Hanson</h4>
+                      <span
+                        ><i class="fas fa-map-marker-alt pr-2"></i>Ios angles
+                        3599 street 3,usa</span
+                      >
+                      <h6>
+                        4.9
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(7.5 reviews)</span>
+                      </h6>
+                    </div>
+                    <div class="d-flex ml-2">
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <span class="sm-image-container border">
+                        <img
+                          src="img/master-card.jpg"
+                          width="70px"
+                          class="sm-images last-image"
+                          alt=""
+                        />
+                        <h6 class="see-all-image">See ALL</h6>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col bg-white m-2 rounded-lg text-center mb-4 p-2">
+                <div class="row">
+                  <div class="col-sm-3 pr-0 user-image">
+                    <img
+                      src="img/user.jpg"
+                      width="100px"
+                      class="rounded-circle img-responsive text-center"
+                      alt="Circular Image"
+                    />
+                  </div>
+                  <div class="col-sm-9 p-0 info-box">
+                    <h6>
+                      <span class="badge badge-secondary"
+                        >4.2 <br />labales</span
+                      >
+                    </h6>
+                    <div class="user-info">
+                      <h4>Marry Hanson</h4>
+                      <span
+                        ><i class="fas fa-map-marker-alt pr-2"></i>Ios angles
+                        3599 street 3,usa</span
+                      >
+                      <h6>
+                        4.9
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(7.5 reviews)</span>
+                      </h6>
+                    </div>
+                    <div class="d-flex ml-2">
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <span class="sm-image-container border">
+                        <img
+                          src="img/master-card.jpg"
+                          width="70px"
+                          class="sm-images last-image"
+                          alt=""
+                        />
+                        <h6 class="see-all-image">See ALL</h6>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col bg-white m-2 rounded-lg text-center mb-4 p-2">
+                <div class="row">
+                  <div class="col-sm-3 pr-0 user-image">
+                    <img
+                      src="img/user.jpg"
+                      width="100px"
+                      class="rounded-circle img-responsive text-center"
+                      alt="Circular Image"
+                    />
+                  </div>
+                  <div class="col-sm-9 p-0 info-box">
+                    <h6>
+                      <span class="badge badge-secondary"
+                        >4.2 <br />labales</span
+                      >
+                    </h6>
+                    <div class="user-info">
+                      <h4>Marry Hanson</h4>
+                      <span
+                        ><i class="fas fa-map-marker-alt pr-2"></i>Ios angles
+                        3599 street 3,usa</span
+                      >
+                      <h6>
+                        4.9
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(7.5 reviews)</span>
+                      </h6>
+                    </div>
+                    <div class="d-flex ml-2">
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <img
+                        src="img/master-card.jpg"
+                        width="70px"
+                        class="sm-images"
+                        alt=""
+                      />
+                      <span class="sm-image-container border">
+                        <img
+                          src="img/master-card.jpg"
+                          width="70px"
+                          class="sm-images last-image"
+                          alt=""
+                        />
+                        <h6 class="see-all-image">See ALL</h6>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /// service -->
+            <div class="col-md-5 user-services pl-0">
+              <div class="d-flex">
+                <div class="col-sm pl-0 users">
+                  <div class="box">
+                    <span class="btn btn-dark mr-2"></span>
+                    <h5>SERVICES</h5>
+                  </div>
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+                  <div class="row bg-white m-2 rounded-lg pt-2 pb-2">
+                    <div class="col-sm-7">
+                      <h6 class="mb-0">Ends Trimmed</h6>
+                      <p class="service-text">
+                        Removal of dead end compassing the health of the hair
+                      </p>
+                      <a href="#" class="read-more stretched-link">READ MORE</a>
+                    </div>
+                    <div class="col-sm-5 service-price p-0 text-center">
+                      <span class="text-center"
+                        >$ 13.00 <br />
+                        1 hour</span
+                      >
+                      <span>
+                        <button class="bg-dark text-white ml-2 p-1">
+                          Book
+                        </button></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4">
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left border-top pt-4">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-4 mx-auto">
+            <!-- Content -->
+            <p>
+              Here you can use rows and columns to organize your footer content.
+              Lorem ipsum dolor sit
+            </p>
+            <form class="example" action="#" style="max-width: 400px">
+              <input
+                class="border p-1"
+                type="text"
+                placeholder="Email Address"
+                name="search2"
+              />
+              <button
+                class="border p-1 pl-2 pr-2 border-secondary bg-white"
+                type="submit"
+              >
+                JOIN
+              </button>
+            </form>
+            <div class="pt-4 pb-4 row payment mb-4">
+              <span class="payment-methods"
+                ><img
+                  class="img payment-logo bg-light border border-light"
+                  src="img/mastercard-visa-credit-card-american-express-company-mastercard.jpg"
+                  alt="visa-credit-card"
+              /></span>
+              <span class="payment-methods">
+                <img
+                  class="img payment-logo pl-2"
+                  src="img/master-card.png"
+                  alt="master-card"
+              /></span>
+              <span class="payment-methods american-express">
+                <img
+                  class="img payment-logo pl-2"
+                  src="img/american-express.png"
+                  alt="master-card"
+              /></span>
+              <span class="payment-methods bg-dark p-1 amazon">
+                <img
+                  class="img payment-logo pl-2"
+                  src="img/amazon.png"
+                  alt="amazon"
+              /></span>
+              <span class="payment-methods bg-light border border-warning">
+                <img
+                  class="img payment-logo pl-2 paypal"
+                  src="img/paypal.png"
+                  alt="paypal"
+              /></span>
+            </div>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+              QUICK LINKS
+            </h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="alert-light">Log in</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">Sign up</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">Services 3</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">Set Up My Business</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">Location</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto">
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mt-3 mb-4">CONTACT</h5>
+
+            <ul class="list-unstyled">
+              <li class="alert-light">Beauty Vitae</li>
+              <li>
+                <a href="#!" class="alert-light">BVteam@beautyvitae.com</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">www.beautyvitae.com</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">3510 South Millway</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light"> Mississauga, L5L3T9, ON</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light">Canada</a>
+              </li>
+              <li>
+                <a href="#!" class="alert-light"
+                  >Customer Support: +1-800-123-321</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mx-auto secure-section">
+            <!-- Links -->
+            <!-- <h5 class="font-weight-bold text-uppercase mt-3 mb-4"></h5> -->
+
+            <ul class="list-unstyled text-center mt-4">
+              <li id="sec ">
+                <div class="sec2 text-center">
+                  <img
+                    src="img/lock.png"
+                    alt="secure-lock"
+                    class="security mr-1"
+                    srcset=""
+                  />
+                  <div class="  ">
+                    <span class="h5 font-weight-bold">Secure </span><br />
+                    <p style="font-size: small; line-height: 10px">
+                      SSL Encryption
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li id="sec ">
+                <div class="sec2">
+                  <img
+                    src="img/24hours.png"
+                    alt="secure-lock"
+                    class="security mr-1"
+                    srcset=""
+                  />
+                  <div class="  ">
+                    <span class="h5 font-weight-bold">Customer </span><br />
+                    <p style="font-size: small; line-height: 10px">Support</p>
+                  </div>
+                </div>
+              </li>
+              <li id="sec ">
+                <div class="sec2">
+                  <img
+                    src="img/secure.jpg"
+                    alt="secure-lock"
+                    class="security mr-1"
+                    srcset=""
+                  />
+                  <div class="user-info text-center">
+                    <span class="h5 font-weight-bold">Secure </span><br />
+                    <p style="font-size: small; line-height: 10px">Payment</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+
+      <div class="row justify-content-around text-white bg-dark">
+        <!-- policies -->
+        <ul class="list-unstyled text-center py-3">
+          <li class="list-inline-item">
+            <a class="btn-floating btn-fb"> PRIVACY POLICY</a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-tw">CARE </a>
+          </li>
+          <li class="list-inline-item">
+            <a class="btn-floating btn-gplus"> SHIPPING RETURN POLICY </a>
+          </li>
+        </ul>
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center py-3">
+          <li class="list-inline-item bg-white pl-2 pr-2 text-dark">
+            <a class="btn-floating btn-fb">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item bg-white pl-2 pr-2 text-dark">
+            <a class="btn-floating btn-tw">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="list-inline-item bg-white pl-2 pr-2 text-dark">
+            <a class="btn-floating btn-gplus">
+              <i class="fab fa-twitter"> </i>
+            </a>
+          </li>
+          <li class="list-inline-item bg-white pl-2 pr-2 text-dark">
+            <a class="btn-floating btn-li">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Social buttons -->
+        <!-- Copyright -->
+        <div class="footer-copyright py-3">
+          © 2020 Copyright: All Right Reserved
+        </div>
+        <!-- Copyright -->
+      </div>
+    </footer>
+  </body>
+</html>
